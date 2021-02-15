@@ -9,89 +9,92 @@
   </head>
   <body>
     <div class="container">
-      <h1>РЕЄСТРАЦІЙНА ФОРМА ВПО</h1>
-      <h5 class="neccessary">* Обязательно</h5>
-      <form action="" class="queryform">
-        <label for="email"
-          >Адреса електронної пошти <span class="neccessary">*</span></label
-        >
-        <input type="email" name="email" id="email" name="email" required />
-        <h5>Підтвердження статусу ВПО <span class="neccessary">*</span></h5>
-        <p class="description">
-          «Підтвердження означає, що Ви та всі члени Вашої сім'ї мають статус
-          внутрішньо переміщеної особи, що підтверджується довідкою про взяття
-          на облік внутрішньо переміщеної особи відповідно до постанови КМУ від
-          01.10.2014 р. № 509 «Про облік внутрішньо переміщених осіб»
-        </p>
-        <input type="radio" name="vpostatus" id="vpo" />
-        <label for="vpo"> Так</label>
-        <h5>Прізвище <span class="neccessary">*</span></h5>
-        <input type="text" name="surname" id="" />
-        <h5>Ім'я <span class="neccessary">*</span></h5>
-        <input type="text" name="firstname" id="" />
-        <h5>По батькові <span class="neccessary">*</span></h5>
-        <input type="text" name="surname" id="" />
-        <h5>
-          Регіон, у якому бажаєте отримати кредит
-          <span class="neccessary">*</span>
-        </h5>
-        <select>
-          <option disabled>Оберіть регіон</option>
-          <option value="Вінницька обл.">Вінницька обл.</option>
-          <option value="Волинська обл.">Волинська обл.</option>
-          <option value="Дніпропетровська обл.">Дніпропетровська обл.</option>
-          <option value="Донецька обл.">Донецька обл.</option>
-          <option value="Житомирська обл.">Житомирська обл.</option>
-          <option value=" обл.">Закарпатська обл.</option>
-          <option value=" обл.">Запорізька обл.</option>
-          <option value=" обл.">Івано-Франківська обл.</option>
-          <option value=" обл.">м.Київ</option>
-          <option value=" обл.">Київська обл.</option>
-          <option value=" обл.">Луганська обл.</option>
-          <option value=" обл.">Лвівська обл.</option>
-          <option value=" обл.">Миколаївська обл.</option>
-          <option value=" обл.">Одеська обл.</option>
-          <option value=" обл.">Полтавська обл.</option>
-          <option value=" обл.">Рівненська обл.</option>
-          <option value=" обл.">Сумська обл.</option>
-          <option value=" обл.">Тернопільска обл.</option>
-          <option value=" обл.">Харківська обл.</option>
-          <option value=" обл.">Херсонська обл.</option>
-          <option value=" обл.">Хмельницька обл.</option>
-          <option value=" обл.">Черкаська обл.</option>
-          <option value=" обл.">Чернівецька обл.</option>
-          <option value=" обл.">Чернігівська обл.</option>
-        </select>
-        <h5>Серія паспорта</h5>
-        <input type="text" name="passportseries" id="" />
-        <h5>Номер паспорту/ІD-картки <span class="neccessary">*</span></h5>
-        <input type="text" name="passportnumber" id="" />
-        <h5>Дата народження <span class="neccessary">*</span></h5>
-        <input type="date" id="start" name="trip-start"
-       value="2003-01-01"
-       min="1950-01-01" max="2003-01-01">
-       <h5>Стать <span class="neccessary">*</span></h5>
-       <input type="radio" name="sex" id="man" value="man"> <label for="man">Чоловіча</label>  <br/>
-       <input type="radio" name="sex" id="woman" value="woman"> <label for="woman">Жіноча</label>
-       <h5>Реєстраційний номер облікової картки платника податків 
-        <span class="neccessary">*</span></h5>
-        <p class="description">
-            Якщо Ви не маєте реєстраційного номера за релігійними переконаннями, заповніть регістр, будь ласка, одиницями (наприклад: 1111111111)
-        </p>
-        <input type="text" name="inn" id="inn">
-        <h5>Кількість членів сім’ї (включаючи заявника)</h5>
-        <input type="text" name="familyCounter" id="familyCounter">
-        <h5>Номер телефону заявника <span class="neccessary">*</span></h5>
-        <input type="text" name="cellNumber" id="cellNumber">
-        <h5><span class="neccessary">*</span></h5>
-        <p class="description">Цим підтверджую, що я та члени моєї сім’ї не отримували за рахунок бюджетних коштів державну підтримку/грошову компенсацію/кредити на пільгових умовах на будівництво (придбання) житла (окрім житла, яке знаходиться на території, що є тимчасово окупованою відповідно до Закону України “Про забезпечення прав і свобод громадян та правовий режим на тимчасово окупованій території України” (знаходиться на території населених пунктів, зазначених у переліку населених пунктів, на території яких органи державної влади тимчасово не здійснюють свої повноваження, та переліку населених пунктів, що розташовані на лінії зіткнення, затверджених розпорядженням Кабінету Міністрів України від 7 листопада 2014 р. № 1085).</p>
-        <input type="checkbox" name="" id="familyFin"> <label for="familyFin">Підтверджую</label>
-        <h5>Згода на обробку персональних даних<span class="neccessary">*</span></h5>
-        <div class="description">Реєструючись, Ви підтверджуєте свою згоду на обробку персональних даних, а також підтверджуєте те, що ознайомились та погоджуєтесь зі Згодою на збір та обробку персональних даних</div>
-        <input type="checkbox" name="" id="privacyPol"> <label for="privacyPol">Підтверджую</label>
-        
-        <div class="submitForm"><input type="submit" value="Надіслати"></div>
-    </form>
+      <div class="wrapper">
+        <h1>РЕЄСТРАЦІЙНА ФОРМА ВПО</h1>
+        <h5 class="neccessary">* Обязательно</h5>
+        <form action="" class="queryform">
+          <label for="email"
+            >Адреса електронної пошти <span class="neccessary">*</span></label
+          >
+          <input type="email" name="email" id="email" name="email" required />
+          <h5>Підтвердження статусу ВПО <span class="neccessary">*</span></h5>
+          <p class="description">
+            «Підтвердження означає, що Ви та всі члени Вашої сім'ї мають статус
+            внутрішньо переміщеної особи, що підтверджується довідкою про взяття
+            на облік внутрішньо переміщеної особи відповідно до постанови КМУ від
+            01.10.2014 р. № 509 «Про облік внутрішньо переміщених осіб»
+          </p>
+          <input type="radio" name="vpostatus" id="vpo" />
+          <label for="vpo"> Так</label>
+          <h5>Прізвище <span class="neccessary">*</span></h5>
+          <input type="text" name="surname" id="" />
+          <h5>Ім'я <span class="neccessary">*</span></h5>
+          <input type="text" name="firstname" id="" />
+          <h5>По батькові <span class="neccessary">*</span></h5>
+          <input type="text" name="surname" id="" />
+          <h5>
+            Регіон, у якому бажаєте отримати кредит
+            <span class="neccessary">*</span>
+          </h5>
+          <select>
+            <option disabled>Оберіть регіон</option>
+            <option value="Вінницька обл.">Вінницька обл.</option>
+            <option value="Волинська обл.">Волинська обл.</option>
+            <option value="Дніпропетровська обл.">Дніпропетровська обл.</option>
+            <option value="Донецька обл.">Донецька обл.</option>
+            <option value="Житомирська обл.">Житомирська обл.</option>
+            <option value=" обл.">Закарпатська обл.</option>
+            <option value=" обл.">Запорізька обл.</option>
+            <option value=" обл.">Івано-Франківська обл.</option>
+            <option value=" обл.">м.Київ</option>
+            <option value=" обл.">Київська обл.</option>
+            <option value=" обл.">Луганська обл.</option>
+            <option value=" обл.">Лвівська обл.</option>
+            <option value=" обл.">Миколаївська обл.</option>
+            <option value=" обл.">Одеська обл.</option>
+            <option value=" обл.">Полтавська обл.</option>
+            <option value=" обл.">Рівненська обл.</option>
+            <option value=" обл.">Сумська обл.</option>
+            <option value=" обл.">Тернопільска обл.</option>
+            <option value=" обл.">Харківська обл.</option>
+            <option value=" обл.">Херсонська обл.</option>
+            <option value=" обл.">Хмельницька обл.</option>
+            <option value=" обл.">Черкаська обл.</option>
+            <option value=" обл.">Чернівецька обл.</option>
+            <option value=" обл.">Чернігівська обл.</option>
+          </select>
+          <h5>Серія паспорта</h5>
+          <input type="text" name="passportseries" id="" />
+          <h5>Номер паспорту/ІD-картки <span class="neccessary">*</span></h5>
+          <input type="text" name="passportnumber" id="" />
+          <h5>Дата народження <span class="neccessary">*</span></h5>
+          <input type="date" id="start" name="trip-start"
+         value="2003-01-01"
+         min="1950-01-01" max="2003-01-01">
+         <h5>Стать <span class="neccessary">*</span></h5>
+         <input type="radio" name="sex" id="man" value="man"> <label for="man">Чоловіча</label>  <br/>
+         <input type="radio" name="sex" id="woman" value="woman"> <label for="woman">Жіноча</label>
+         <h5>Реєстраційний номер облікової картки платника податків 
+          <span class="neccessary">*</span></h5>
+          <p class="description">
+              Якщо Ви не маєте реєстраційного номера за релігійними переконаннями, заповніть регістр, будь ласка, одиницями (наприклад: 1111111111)
+          </p>
+          <input type="text" name="inn" id="inn">
+          <h5>Кількість членів сім’ї (включаючи заявника)</h5>
+          <input type="text" name="familyCounter" id="familyCounter">
+          <h5>Номер телефону заявника <span class="neccessary">*</span></h5>
+          <input type="text" name="cellNumber" id="cellNumber">
+          <h5><span class="neccessary">*</span></h5>
+          <p class="description">Цим підтверджую, що я та члени моєї сім’ї не отримували за рахунок бюджетних коштів державну підтримку/грошову компенсацію/кредити на пільгових умовах на будівництво (придбання) житла (окрім житла, яке знаходиться на території, що є тимчасово окупованою відповідно до Закону України “Про забезпечення прав і свобод громадян та правовий режим на тимчасово окупованій території України” (знаходиться на території населених пунктів, зазначених у переліку населених пунктів, на території яких органи державної влади тимчасово не здійснюють свої повноваження, та переліку населених пунктів, що розташовані на лінії зіткнення, затверджених розпорядженням Кабінету Міністрів України від 7 листопада 2014 р. № 1085).</p>
+          <input type="checkbox" name="" id="familyFin"> <label for="familyFin">Підтверджую</label>
+          <h5>Згода на обробку персональних даних<span class="neccessary">*</span></h5>
+          <div class="description">Реєструючись, Ви підтверджуєте свою згоду на обробку персональних даних, а також підтверджуєте те, що ознайомились та погоджуєтесь зі Згодою на збір та обробку персональних даних</div>
+          <input type="checkbox" name="" id="privacyPol"> <label for="privacyPol">Підтверджую</label>
+          
+          <div class="submitForm"><input type="submit" value="Надіслати"></div>
+      </form>
+      </div>
+      
     </div>
   </body>
 </html>
