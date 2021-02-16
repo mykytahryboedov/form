@@ -13,10 +13,13 @@
         <h1>РЕЄСТРАЦІЙНА ФОРМА ВПО</h1>
         <h5 class="neccessary">* Обязательно</h5>
         <form action="" class="queryform">
-          <label for="email" class="emailForm"
+          <div class="mailWrap">
+            <label for="email" class="emailForm"
             >Адреса електронної пошти <span class="neccessary">*</span></label
           >
           <input type="email" name="email" id="email" name="email" required />
+          </div>
+          
           <h5>Підтвердження статусу ВПО <span class="neccessary">*</span></h5>
           <p class="description">
             «Підтвердження означає, що Ви та всі члени Вашої сім'ї мають статус
@@ -24,19 +27,19 @@
             на облік внутрішньо переміщеної особи відповідно до постанови КМУ від
             01.10.2014 р. № 509 «Про облік внутрішньо переміщених осіб»
           </p>
-          <input type="radio" name="vpostatus" id="vpo" />
-          <label for="vpo"> Так</label>
+          <input type="radio" name="vpostatus" id="vpo"/>
+          <label for="vpo">Так</label>
           <h5>Прізвище <span class="neccessary">*</span></h5>
-          <input type="text" name="surname" id="" placeholder="Павлов" />
-          <h5>Ім'я <span class="neccessary">*</span></h5>
-          <input type="text" name="firstname" id="" placeholder="Павло"/>
+          <input type="text" name="surname" id="" placeholder="Павлов" required/>
+          <h5>Ім'я <span class="neccessary" >*</span></h5>
+          <input type="text" name="firstname" id="" placeholder="Павло" required/>
           <h5>По батькові <span class="neccessary">*</span></h5>
-          <input type="text" name="surname" id="" placeholder="Павлович" />
+          <input type="text" name="surname" id="" placeholder="Павлович" required/>
           <h5>
             Регіон, у якому бажаєте отримати кредит
             <span class="neccessary">*</span>
           </h5>
-          <select>
+          <select required>
             <option disabled>Оберіть регіон</option>
             <option value="Вінницька обл.">Вінницька обл.</option>
             <option value="Волинська обл.">Волинська обл.</option>
@@ -70,18 +73,18 @@
           <h5>Дата народження <span class="neccessary">*</span></h5>
           <input type="date" id="start" name="trip-start"
          value="2003-01-01"
-         min="1950-01-01" max="2003-01-01">
+         min="1950-01-01" max="2003-01-01" required>
          <h5>Стать <span class="neccessary">*</span></h5>
-         <input type="radio" name="sex" id="man" value="man"> <label for="man">Чоловіча</label>  <br/>
+         <input type="radio" name="sex" id="man" value="man" required> <label for="man">Чоловіча</label>  <br/>
          <input type="radio" name="sex" id="woman" value="woman"> <label for="woman">Жіноча</label>
          <h5>Реєстраційний номер облікової картки платника податків 
           <span class="neccessary">*</span></h5>
           <p class="description">
               Якщо Ви не маєте реєстраційного номера за релігійними переконаннями, заповніть регістр, будь ласка, одиницями (наприклад: 1111111111)
           </p>
-          <input type="text" name="inn" id="inn">
+          <input type="text" name="inn" id="inn" maxlength="10" minlength="10">
           <h5>Кількість членів сім’ї (включаючи заявника)</h5>
-          <input type="text" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20">
+          <input type="text" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20" maxlength="20" minlength="1">
           <h5>Номер телефону заявника <span class="neccessary">*</span></h5>
           <input type="text" name="cellNumber" id="cellNumber">
           <h5><span class="neccessary">*</span></h5>
