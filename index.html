@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,7 @@
             <label for="email" class="emailForm"
             >Адреса електронної пошти <span class="neccessary">*</span></label
           >
-          <input type="email" name="email" id="email" name="email" required />
+          <input type="email" name="email" id="email" name="email" required/>
           </div>
           
           <h5>Підтвердження статусу ВПО <span class="neccessary">*</span></h5>
@@ -30,11 +30,11 @@
           <input type="radio" name="vpostatus" id="vpo"/>
           <label for="vpo">Так</label>
           <h5>Прізвище <span class="neccessary">*</span></h5>
-          <input type="text" name="surname" id="" placeholder="Павлов" required/>
+          <input type="text" name="surname" id="surname" placeholder="Павлов" required class="names" >
           <h5>Ім'я <span class="neccessary" >*</span></h5>
-          <input type="text" name="firstname" id="" placeholder="Павло" required/>
+          <input type="text" name="firstname" id="name" placeholder="Павло" required class="names" />
           <h5>По батькові <span class="neccessary">*</span></h5>
-          <input type="text" name="surname" id="" placeholder="Павлович" required/>
+          <input type="text" name="surname" id="middleName" placeholder="Павлович" required class="names" />
           <h5>
             Регіон, у якому бажаєте отримати кредит
             <span class="neccessary">*</span>
@@ -82,9 +82,9 @@
           <p class="description">
               Якщо Ви не маєте реєстраційного номера за релігійними переконаннями, заповніть регістр, будь ласка, одиницями (наприклад: 1111111111)
           </p>
-          <input type="text" name="inn" id="inn" maxlength="10" minlength="10">
+          <input type="text" name="inn" id="inn" maxlength="10" minlength="10" pattern="[0-9]">
           <h5>Кількість членів сім’ї (включаючи заявника)</h5>
-          <input type="text" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20" maxlength="20" minlength="1">
+          <input type="text" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20" maxlength="20" minlength="1" pattern="[0-9]">
           <h5>Номер телефону заявника <span class="neccessary">*</span></h5>
           <input type="text" name="cellNumber" id="cellNumber">
           <h5><span class="neccessary">*</span></h5>
@@ -100,4 +100,5 @@
       
     </div>
   </body>
+  <script src="./formHandler.js"></script>
 </html>
