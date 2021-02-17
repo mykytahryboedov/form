@@ -21,7 +21,7 @@ label:not(.emailForm){
     font-size: 18px;
 }
 
-input[type=text], input[type=email]{
+input[type=text], input[type=email], input[type=number]{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     transition: 0.5s;

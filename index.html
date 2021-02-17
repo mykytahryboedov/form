@@ -69,7 +69,7 @@
           <h5>Серія паспорта</h5>
           <input type="text" name="passportseries" id="" />
           <h5>Номер паспорту/ІD-картки <span class="neccessary">*</span></h5>
-          <input type="text" name="passportnumber" id="" required pattern=""/>
+          <input type="text" name="passportnumber" id="" required pattern="^[0-9]{6,9}"/>
           <h5>Дата народження <span class="neccessary">*</span></h5>
           <input type="date" id="start" name="trip-start required"
          value="2003-01-01"
@@ -82,10 +82,10 @@
           <p class="description">
               Якщо Ви не маєте реєстраційного номера за релігійними переконаннями, заповніть регістр, будь ласка, одиницями (наприклад: 1111111111)
           </p>
-          <input type="text" name="inn" id="inn" maxlength="10" minlength="10" pattern="^[0-9]{6,9}" required>
+          <input type="text" name="inn" id="inn" maxlength="10" minlength="10" pattern="[0-9]{10,10}" required>
           <h5>Кількість членів сім’ї (включаючи заявника)</h5>
-          <input type="text" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20" maxlength="20" minlength="1" pattern="^[0-9]{1,2}">
-          <h5>Номер телефону заявника <span class="neccessary">*</span></h5>
+          <input type="number" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20" maxlength="20" minlength="1" pattern="^[0-9]{1,2}">
+          <h5>Мобільний номер телефону заявника <span class="neccessary">*</span></h5>
           <input type="text" name="cellNumber" id="cellNumber" required>
           <h5><span class="neccessary">*</span></h5>
           <p class="description">Цим підтверджую, що я та члени моєї сім’ї не отримували за рахунок бюджетних коштів державну підтримку/грошову компенсацію/кредити на пільгових умовах на будівництво (придбання) житла (окрім житла, яке знаходиться на території, що є тимчасово окупованою відповідно до Закону України “Про забезпечення прав і свобод громадян та правовий режим на тимчасово окупованій території України” (знаходиться на території населених пунктів, зазначених у переліку населених пунктів, на території яких органи державної влади тимчасово не здійснюють свої повноваження, та переліку населених пунктів, що розташовані на лінії зіткнення, затверджених розпорядженням Кабінету Міністрів України від 7 листопада 2014 р. № 1085).</p>
@@ -94,7 +94,7 @@
           <div class="description">Реєструючись, Ви підтверджуєте свою згоду на обробку персональних даних, а також підтверджуєте те, що ознайомились та погоджуєтесь зі Згодою на збір та обробку персональних даних</div>
           <input type="checkbox" required name="checkbox" id="privacyPol" value="check"> <label for="privacyPol">Підтверджую</label>
           
-          <div class="submitForm"><input type="submit" value="Надіслати"></div>
+          <div class="submitForm"><input type="submit" value="Надіслати" onclick="validatePhone(document.getElementById('cellNumber').value)"></div>
       </form>
       </div>
       
