@@ -2,21 +2,20 @@ const surname = document.getElementById('surname')
 const names = document.getElementsByClassName('names')
 
 
-const reg = new RegExp('[АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгдеєжзиіїйклмнопрстуфхцчшщьюя]');
-
-// function validateEmail(email){
-//     let reg =  /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-//     if (reg.test(email.value) == false) {
-//         console.log('1234')
-//         return false;
-        
+// const checkBox = document.querySelector('input[type="checkbox"]')
+// checkBox.addEventListener('change', validateCheckbox)
+// function validateCheckbox(){
+//     if (checkBox.checked) {
+//         console.log('123')
 //     }
 // }
+
+
 
 function insertAttr(){
     const arr = [...names]
     arr.forEach(e => {
-        e.setAttribute('pattern','[АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгдеєжзиіїйклмнопрстуфхцчшщьюя]')
+        e.setAttribute('pattern','^[АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгдеєжзиіїйклмнопрстуфхцчшщьюя]+$')
     })
     
 }

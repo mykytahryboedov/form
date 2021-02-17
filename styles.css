@@ -28,7 +28,7 @@ input[type=text], input[type=email]{
     border: 0;
     border-bottom: 2px solid lightgray;
     width: 33%;
-    padding-bottom: 0.3em;
+    padding: 0.3em 0 0.3em 0.1em;
 }
 
 input[type=email]{
@@ -36,9 +36,6 @@ input[type=email]{
     margin-left: 0.3em;
 }
 
-/* input[type=radio]{
-    
-} */
 
 input[type=radio]:focus{
     outline: none;
