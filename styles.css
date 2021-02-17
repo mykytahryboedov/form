@@ -16,6 +16,15 @@ h5{
     font-size: 18px;
 }
 
+ul{
+    margin-top: 1em;
+    list-style: none;
+}
+
+#listItemTitle {
+    padding-bottom: 0;
+}
+
 label:not(.emailForm){
    padding-left: 0.1em;
     font-size: 18px;
@@ -70,7 +79,7 @@ input[type=text]:focus:-ms-input-placeholder {
   color: transparent
 }
 
-input[type=submit]{
+input[type=submit], button{
     transition: 1s;
     border: 0;
     cursor: pointer;
@@ -112,6 +121,7 @@ input[type=submit]:focus{
 }
 
 .neccessary{
+    font-size: 18px;
     color: #d83631;
 }
 
@@ -123,6 +133,11 @@ input[type=submit]:focus{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     padding-bottom: 1em;
+}
+
+#familyCounterButton{
+    padding: 0.5em;
+    margin-left: 1em;
 }
 
 .submitForm {

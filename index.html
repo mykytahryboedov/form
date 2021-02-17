@@ -84,7 +84,9 @@
           </p>
           <input type="text" name="inn" id="inn" maxlength="10" minlength="10" pattern="[0-9]{10,10}" required>
           <h5>Кількість членів сім’ї (включаючи заявника)</h5>
-          <input type="number" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20" maxlength="20" minlength="1" pattern="^[0-9]{1,2}">
+          <input type="text" name="familyCounter" id="familyCounter" placeholder="Від 1 до 20" maxlength="20" minlength="1" pattern="^[0-9]{1,2}"> 
+          <button type="button" id="familyCounterButton">Підтвердити</button>
+          <ul id="familyMemberList"></ul>
           <h5>Мобільний номер телефону заявника <span class="neccessary">*</span></h5>
           <input type="text" name="cellNumber" id="cellNumber" required>
           <h5><span class="neccessary">*</span></h5>
