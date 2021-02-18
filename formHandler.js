@@ -14,7 +14,7 @@ function generateList(){
     
 
    else if (familyList.innerHTML == '') {
-        for (let i = 1; i <= familyCounterInput.value; i++) {
+        for (let i = 1; i <= familyCounterInput.value -1; i++) {
             familyList.insertAdjacentHTML('beforeend', `<li class="familyMemberListItem">
             <p class="description" id="listItemTitle12">№${i} РНОКПП <span class="neccessary">*</span></p>
             <input type="text" name="familyItems" pattern="[0-9]{10,10}" required="">`)
@@ -22,25 +22,22 @@ function generateList(){
           }
     }
 
-     else if(familyCounterInput.value <= familyList.childElementCount || familyCounterInput <=1){
-        for(let i = familyList.childElementCount; i > familyCounterInput.value; i--){
-            familyList.lastElementChild.remove()
+     else if(familyCounterInput.value <= familyList.childElementCount){
+        for(let i = familyList.childElementCount; i > familyCounterInput.value -1; i--){
+            familyList.removeChild(familyList.lastChild)
             console.log(123)
         }
     }
 
 
     else if(familyCounterInput.value > familyList.childElementCount){
-    for(let i = familyList.childElementCount; i < familyCounterInput.value; i++){
+    for(let i = familyList.childElementCount; i < familyCounterInput.value -1; i++){
         familyList.insertAdjacentHTML('beforeend', `<li class="familyMemberListItem">
         <p class="description" id="listItemTitle12">№${i+1} РНОКПП <span class="neccessary">*</span></p>
         <input type="text" name="familyItems" pattern="[0-9]{10,10}" required="">`)
 
         }
     }
-
-   
-    
    
 }
 
