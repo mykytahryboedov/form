@@ -63,7 +63,7 @@ function validatePhone(phone){
 function insertAttr(){
     const arr = [...names]
     arr.forEach(e => {
-        e.setAttribute('pattern','^[АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгдеєжзиіїйклмнопрстуфхцчшщьюя]+$')
+        e.setAttribute('pattern','^[А-ЩЬЮЯҐЄІЇа-щьюяґєії] +$')
     })
     
 }
