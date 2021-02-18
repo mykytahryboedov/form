@@ -11,7 +11,7 @@
     <div class="container">
       <div class="wrapper">
         <h1>РЕЄСТРАЦІЙНА ФОРМА ВПО</h1>
-        <h5 class="neccessary">* Обязательно</h5>
+        <h5 class="neccessary">* Обов'язково</h5>
         <form action="" class="queryform">
           <div class="mailWrap">
             <label for="email" class="emailForm"
@@ -90,11 +90,16 @@
           <h5>Мобільний номер телефону заявника <span class="neccessary">*</span></h5>
           <input type="text" name="cellNumber" id="cellNumber" required placeholder="380635975564">
           <h5><span class="neccessary">*</span></h5>
+          <p class="description">
+            Цим підтверджую, що надані мною вище дані/відомості є правдивими, достовірними та відповідають дійсності. Наслідки та відповідальність за подання завідомо неправдивих відомостей мені відомі.
+          </p>
+          <input type="checkbox" required name="checkbox" id="familyNas" value="check"> <label for="familyNas">Підтверджую</label>
+          <h5><span class="neccessary">*</span></h5>
           <p class="description">Цим підтверджую, що я та члени моєї сім’ї не отримували за рахунок бюджетних коштів державну підтримку/грошову компенсацію/кредити на пільгових умовах на будівництво (придбання) житла (окрім житла, яке знаходиться на території, що є тимчасово окупованою відповідно до Закону України “Про забезпечення прав і свобод громадян та правовий режим на тимчасово окупованій території України” (знаходиться на території населених пунктів, зазначених у переліку населених пунктів, на території яких органи державної влади тимчасово не здійснюють свої повноваження, та переліку населених пунктів, що розташовані на лінії зіткнення, затверджених розпорядженням Кабінету Міністрів України від 7 листопада 2014 р. № 1085).</p>
-          <input type="checkbox" required name="checkbox" id="familyFin" value="check"> <label for="familyFin" >Підтверджую</label>
+          <input type="checkbox" required name="checkbox" id="familyFin" value="check"> <label for="familyFin">Підтверджую</label>
           <h5>Згода на обробку персональних даних<span class="neccessary">*</span></h5>
           <div class="description">Реєструючись, Ви підтверджуєте свою згоду на обробку персональних даних, а також підтверджуєте те, що ознайомились та погоджуєтесь зі Згодою на збір та обробку персональних даних</div>
-          <input type="checkbox" required name="checkbox" id="privacyPol" value="check"> <label for="privacyPol">Підтверджую</label>
+          <input type="checkbox" required name="checkbox" id="privacyPol" value="check"> <label for="privacyPol">Згоден</label>
           
           <div class="submitForm"><input type="submit" value="Надіслати" onclick="validatePhone(document.getElementById('cellNumber').value)"></div>
       </form>
