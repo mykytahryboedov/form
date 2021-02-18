@@ -7,28 +7,44 @@ const acceptCountButton = document.getElementById('familyCounterButton');
 acceptCountButton.addEventListener('click', generateList)
 
 function generateList(){
-    if (familyList.innerHTML == '') {
+    
+    if(familyCounterInput.value > 20 || familyCounterInput.value % 1){
+        return false
+    }
+    
+
+   else if (familyList.innerHTML == '') {
         for (let i = 1; i <= familyCounterInput.value; i++) {
-            familyList.insertAdjacentHTML(
-                'beforeend', `
-            <li class="familyMemberListItem">
-                          <p class="description" id="listItemTitle${i + familyCounterInput.value}" >№${i} РНОКПП <span class="neccessary">*</span></p>
-                          <input type="text" name="familyItems" pattern="[0-9]{10,10}" required>
-                        </li>`
-                        )
+            familyList.insertAdjacentHTML('beforeend', `<li class="familyMemberListItem">
+            <p class="description" id="listItemTitle12">№${i} РНОКПП <span class="neccessary">*</span></p>
+            <input type="text" name="familyItems" pattern="[0-9]{10,10}" required="">`)
+            console.log(12345)
           }
-         
+    }
+
+     else if(familyCounterInput.value <= familyList.childElementCount || familyCounterInput <=1){
+        for(let i = familyList.childElementCount; i > familyCounterInput.value; i--){
+            familyList.lastElementChild.remove()
+            console.log(123)
+        }
     }
 
 
-    else {
-        familyList.innerHTML.replace(/\s/g , "")
-            for (let i = 0; i <= familyList.children.length; i--) {
-                
-                familyList.removeChild(document.querySelector('li'))
-            }      
+    else if(familyCounterInput.value > familyList.childElementCount){
+    for(let i = familyList.childElementCount; i < familyCounterInput.value; i++){
+        familyList.insertAdjacentHTML('beforeend', `<li class="familyMemberListItem">
+        <p class="description" id="listItemTitle12">№${i+1} РНОКПП <span class="neccessary">*</span></p>
+        <input type="text" name="familyItems" pattern="[0-9]{10,10}" required="">`)
+
+        }
+    }
+
+   
+    
+   
 }
-}
+
+
 
 
 // const checkBox = document.querySelector('input[type="checkbox"]')
