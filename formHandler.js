@@ -2,7 +2,18 @@ const surname = document.getElementById('surname')
 const names = document.getElementsByClassName('names')
 const familyCounterInput = document.getElementById('familyCounter')
 const familyList = document.getElementById('familyMemberList')
-const acceptCountButton = document.getElementById('familyCounterButton');
+const acceptCountButton = document.getElementById('familyCounterButton')
+const cellNumber = document.getElementById('cellNumber')
+
+function insertAttr(){
+    const arr = [...names]
+    arr.forEach(e => {
+        e.setAttribute('pattern','^[А-ЩЬЮЯҐЄІЇа-щьюяґєії]+$')
+    })
+    
+}
+
+insertAttr()
 
 acceptCountButton.addEventListener('click', generateList)
 
@@ -40,36 +51,3 @@ function generateList(){
     }
    
 }
-
-
-
-
-// const checkBox = document.querySelector('input[type="checkbox"]')
-// checkBox.addEventListener('change', validateCheckbox)
-// function validateCheckbox(){
-//     if (checkBox.checked) {
-//         console.log('123')
-//     }
-// }
-
-function validatePhone(phone){
-    phone = phone.replace(/[\s\-]/g, '');
-    console.log(phone)
-    debugger;
-  return phone.match(/^((\+?3)?8)?((0\(\d{2}\)?)|(\(0\d{2}\))|(0\d{2}))\d{7}$/) != null;
-
-}
-
-function insertAttr(){
-    const arr = [...names]
-    arr.forEach(e => {
-        e.setAttribute('pattern','^[А-ЩЬЮЯҐЄІЇа-щьюяґєії] +$')
-    })
-    
-}
-
-
-
-
-
-insertAttr()
